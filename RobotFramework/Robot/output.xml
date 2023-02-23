@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221228 16:32:25.728" rpa="false" schemaversion="3">
+<suite id="s1" name="Check" source="c:\Users\LENOVO\Desktop\Python Codes\RahulShetty\Check.Robot">
+<test id="s1-t1" name=" HomePage" line="13">
+<kw name="Open Browser" library="RPA.Browser.Selenium">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221228 16:32:26.367" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/dropdownsPractise/'.</msg>
+<status status="PASS" starttime="20221228 16:32:26.364" endtime="20221228 16:32:33.675"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser.Selenium">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221228 16:32:33.676" endtime="20221228 16:32:33.813"/>
+</kw>
+<kw name="Task-1">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 16:32:38.823" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221228 16:32:33.820" endtime="20221228 16:32:38.823"/>
+</kw>
+<kw name="Select Radio Button" library="RPA.Browser.Selenium">
+<arg>ctl00$mainContent$rbtnl_Trip</arg>
+<arg>RoundTrip</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20221228 16:32:38.825" level="INFO">Selecting 'RoundTrip' from radio button 'ctl00$mainContent$rbtnl_Trip'.</msg>
+<status status="PASS" starttime="20221228 16:32:38.824" endtime="20221228 16:32:39.005"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 16:32:42.007" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221228 16:32:39.006" endtime="20221228 16:32:42.008"/>
+</kw>
+<kw name="Select Checkbox" library="RPA.Browser.Selenium">
+<arg>ctl00$mainContent$chk_SeniorCitizenDiscount</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20221228 16:32:42.009" level="INFO">Selecting checkbox 'ctl00$mainContent$chk_SeniorCitizenDiscount'.</msg>
+<status status="PASS" starttime="20221228 16:32:42.008" endtime="20221228 16:32:42.170"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 16:32:45.171" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221228 16:32:42.170" endtime="20221228 16:32:45.171"/>
+</kw>
+<kw name="Unselect Checkbox" library="RPA.Browser.Selenium">
+<arg>ctl00$mainContent$chk_SeniorCitizenDiscount</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<msg timestamp="20221228 16:32:45.173" level="INFO">Unselecting checkbox 'ctl00$mainContent$chk_SeniorCitizenDiscount'.</msg>
+<status status="PASS" starttime="20221228 16:32:45.172" endtime="20221228 16:32:45.267"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 16:32:48.270" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221228 16:32:45.268" endtime="20221228 16:32:48.272"/>
+</kw>
+<kw name="Select Checkbox" library="RPA.Browser.Selenium">
+<arg>ctl00$mainContent$chk_friendsandfamily</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20221228 16:32:48.276" level="INFO">Selecting checkbox 'ctl00$mainContent$chk_friendsandfamily'.</msg>
+<status status="PASS" starttime="20221228 16:32:48.274" endtime="20221228 16:32:48.527"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 16:32:51.530" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221228 16:32:48.528" endtime="20221228 16:32:51.530"/>
+</kw>
+<kw name="Select From List By Label" library="RPA.Browser.Selenium">
+<arg>ctl00_mainContent_DropDownListCurrency</arg>
+<arg>USD</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20221228 16:32:51.533" level="INFO">Selecting options from selection list 'ctl00_mainContent_DropDownListCurrency' by label USD.</msg>
+<status status="PASS" starttime="20221228 16:32:51.531" endtime="20221228 16:32:51.842"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 16:32:56.846" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221228 16:32:51.843" endtime="20221228 16:32:56.847"/>
+</kw>
+<kw name="Close Browser" library="RPA.Browser.Selenium">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221228 16:32:56.848" endtime="20221228 16:32:59.221"/>
+</kw>
+<status status="PASS" starttime="20221228 16:32:33.818" endtime="20221228 16:32:59.222"/>
+</kw>
+<status status="PASS" starttime="20221228 16:32:26.361" endtime="20221228 16:32:59.224"/>
+</test>
+<status status="PASS" starttime="20221228 16:32:25.738" endtime="20221228 16:32:59.231"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Check">Check</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

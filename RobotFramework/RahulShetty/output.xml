@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221229 10:31:24.284" rpa="false" schemaversion="3">
+<suite id="s1" name="Check" source="C:\Users\LENOVO\Desktop\Python Codes\RahulShetty\Check.Robot">
+<test id="s1-t1" name=" HomePage" line="15">
+<kw name="Open Browser" library="RPA.Browser.Selenium">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221229 10:31:25.561" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/dropdownsPractise/'.</msg>
+<status status="PASS" starttime="20221229 10:31:25.560" endtime="20221229 10:31:32.469"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser.Selenium">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221229 10:31:32.471" endtime="20221229 10:31:32.625"/>
+</kw>
+<kw name="Task-1">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:37.632" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:32.631" endtime="20221229 10:31:37.632"/>
+</kw>
+<kw name="Get Title" library="RPA.Browser.Selenium">
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20221229 10:31:37.644" level="INFO">${Title} = QAClickJet - Flight Booking for Domestic and International, Cheap Air Tickets</msg>
+<status status="PASS" starttime="20221229 10:31:37.632" endtime="20221229 10:31:37.644"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221229 10:31:37.644" endtime="20221229 10:31:37.646"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://input[@id='ctl00_mainContent_ddl_originStation1_CTXT']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:31:37.647" level="INFO">Clicking element 'xpath://input[@id='ctl00_mainContent_ddl_originStation1_CTXT']'.</msg>
+<status status="PASS" starttime="20221229 10:31:37.646" endtime="20221229 10:31:37.887"/>
+</kw>
+<kw name="Send Keys" library="RPA.Desktop.Windows">
+<arg>MAA</arg>
+<doc>Send keys into active windows.</doc>
+<status status="PASS" starttime="20221229 10:31:37.887" endtime="20221229 10:31:38.043"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:40.044" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:38.044" endtime="20221229 10:31:40.044"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://input[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:31:40.045" level="INFO">Clicking element 'xpath://input[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']'.</msg>
+<status status="PASS" starttime="20221229 10:31:40.044" endtime="20221229 10:31:40.253"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:42.256" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:40.254" endtime="20221229 10:31:42.256"/>
+</kw>
+<kw name="Send Keys" library="RPA.Desktop.Windows">
+<arg>CJB</arg>
+<doc>Send keys into active windows.</doc>
+<status status="PASS" starttime="20221229 10:31:42.256" endtime="20221229 10:31:42.424"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:44.425" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:42.424" endtime="20221229 10:31:44.425"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://input[@id='ctl00_mainContent_view_date1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:31:44.426" level="INFO">Clicking element 'xpath://input[@id='ctl00_mainContent_view_date1']'.</msg>
+<status status="PASS" starttime="20221229 10:31:44.425" endtime="20221229 10:31:44.576"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:46.577" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:44.577" endtime="20221229 10:31:46.577"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://body[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:31:46.578" level="INFO">Clicking element 'xpath://body[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[1]/a[1]'.</msg>
+<status status="PASS" starttime="20221229 10:31:46.577" endtime="20221229 10:31:46.925"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:48.926" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:46.925" endtime="20221229 10:31:48.926"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://input[@id='ctl00_mainContent_view_date2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:31:48.927" level="INFO">Clicking element 'xpath://input[@id='ctl00_mainContent_view_date2']'.</msg>
+<status status="PASS" starttime="20221229 10:31:48.926" endtime="20221229 10:31:49.194"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:51.196" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:49.195" endtime="20221229 10:31:51.196"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://body[1]/div[1]/div[1]/table[1]/tbody[1]/tr[3]/td[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:31:51.197" level="INFO">Clicking element 'xpath://body[1]/div[1]/div[1]/table[1]/tbody[1]/tr[3]/td[1]/a[1]'.</msg>
+<status status="PASS" starttime="20221229 10:31:51.196" endtime="20221229 10:31:51.350"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:53.352" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:51.352" endtime="20221229 10:31:53.352"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://div[@id='divpaxinfo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:31:53.353" level="INFO">Clicking element 'xpath://div[@id='divpaxinfo']'.</msg>
+<status status="PASS" starttime="20221229 10:31:53.352" endtime="20221229 10:31:53.477"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:55.478" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:53.477" endtime="20221229 10:31:55.478"/>
+</kw>
+<kw name="Double Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://span[@id='hrefIncAdt']</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:31:55.480" level="INFO">Double clicking element 'xpath://span[@id='hrefIncAdt']'.</msg>
+<status status="PASS" starttime="20221229 10:31:55.479" endtime="20221229 10:31:55.861"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:31:57.862" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:55.861" endtime="20221229 10:31:57.862"/>
+</kw>
+<kw name="Double Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://span[@id='hrefIncChd']</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:31:57.863" level="INFO">Double clicking element 'xpath://span[@id='hrefIncChd']'.</msg>
+<status status="PASS" starttime="20221229 10:31:57.862" endtime="20221229 10:31:58.230"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:32:01.232" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221229 10:31:58.231" endtime="20221229 10:32:01.232"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://input[@id='btnclosepaxoption']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221229 10:32:01.233" level="INFO">Clicking element 'xpath://input[@id='btnclosepaxoption']'.</msg>
+<status status="PASS" starttime="20221229 10:32:01.232" endtime="20221229 10:32:01.340"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:32:03.340" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221229 10:32:01.340" endtime="20221229 10:32:03.340"/>
+</kw>
+<kw name="Select Radio Button" library="RPA.Browser.Selenium">
+<arg>ctl00$mainContent$rbtnl_Trip</arg>
+<arg>RoundTrip</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20221229 10:32:03.341" level="INFO">Selecting 'RoundTrip' from radio button 'ctl00$mainContent$rbtnl_Trip'.</msg>
+<status status="PASS" starttime="20221229 10:32:03.341" endtime="20221229 10:32:03.400"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:32:06.401" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221229 10:32:03.400" endtime="20221229 10:32:06.401"/>
+</kw>
+<kw name="Select Checkbox" library="RPA.Browser.Selenium">
+<arg>ctl00$mainContent$chk_SeniorCitizenDiscount</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20221229 10:32:06.402" level="INFO">Selecting checkbox 'ctl00$mainContent$chk_SeniorCitizenDiscount'.</msg>
+<status status="PASS" starttime="20221229 10:32:06.401" endtime="20221229 10:32:06.563"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:32:09.565" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221229 10:32:06.564" endtime="20221229 10:32:09.565"/>
+</kw>
+<kw name="Unselect Checkbox" library="RPA.Browser.Selenium">
+<arg>ctl00$mainContent$chk_SeniorCitizenDiscount</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<msg timestamp="20221229 10:32:09.566" level="INFO">Unselecting checkbox 'ctl00$mainContent$chk_SeniorCitizenDiscount'.</msg>
+<status status="PASS" starttime="20221229 10:32:09.565" endtime="20221229 10:32:09.668"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:32:12.670" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221229 10:32:09.669" endtime="20221229 10:32:12.670"/>
+</kw>
+<kw name="Select Checkbox" library="RPA.Browser.Selenium">
+<arg>ctl00$mainContent$chk_friendsandfamily</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20221229 10:32:12.670" level="INFO">Selecting checkbox 'ctl00$mainContent$chk_friendsandfamily'.</msg>
+<status status="PASS" starttime="20221229 10:32:12.670" endtime="20221229 10:32:12.810"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:32:15.812" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221229 10:32:12.811" endtime="20221229 10:32:15.812"/>
+</kw>
+<kw name="Select From List By Label" library="RPA.Browser.Selenium">
+<arg>ctl00_mainContent_DropDownListCurrency</arg>
+<arg>USD</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20221229 10:32:15.812" level="INFO">Selecting options from selection list 'ctl00_mainContent_DropDownListCurrency' by label USD.</msg>
+<status status="PASS" starttime="20221229 10:32:15.812" endtime="20221229 10:32:15.977"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221229 10:32:20.978" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221229 10:32:15.977" endtime="20221229 10:32:20.978"/>
+</kw>
+<kw name="Close Browser" library="RPA.Browser.Selenium">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221229 10:32:20.979" endtime="20221229 10:32:23.452"/>
+</kw>
+<status status="PASS" starttime="20221229 10:31:32.630" endtime="20221229 10:32:23.452"/>
+</kw>
+<status status="PASS" starttime="20221229 10:31:25.558" endtime="20221229 10:32:23.454"/>
+</test>
+<status status="PASS" starttime="20221229 10:31:24.287" endtime="20221229 10:32:23.458"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Check">Check</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221229 10:31:25.534" level="WARN">C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\RPA\Desktop\Windows.py:209: FutureWarning: `RPA.Desktop.Windows` got deprecated and will be no longer maintained, please use `RPA.Windows` instead (https://robocorp.com/docs/libraries/rpa-framework/rpa-windows)
+  deprecation(
+</msg>
+</errors>
+</robot>
